@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/normalize.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./js/index.js" defer></script>
+    <title>Test</title>
+</head>
+<body>
+    <form action="#" class="form">
+        <div class="form__prompt prompt-firstname">
+            <p class="prompt__text">Недопустимые символы или превышен лимит в 25 символов</p>
+        </div>
+
+        <div class="first-name form__content">
+            <label for="first-name" class="first-name__label form__label">Имя: </label>
+            <input id="first-name" type="text" name="first-name" class="first-name__input form__input" placeholder="Введите имя" required>
+        </div>
+
+        <div class="form__prompt prompt-lastname">
+            <p class="prompt__text">Недопустимые символы или превышен лимит в 25 символов</p>
+        </div>
+
+        <div class="last-name form__content">
+            <label for="last-name" class="last-name__label form__label">Фамилия: </label>
+            <input id="last-name" type="text" name="last-name" class="last-name__input form__input" placeholder="Введите фамилию" required>
+        </div>
+
+        <div class="form__prompt prompt-email">
+            <p class="prompt__text">Невалидный email. Пример валидного - test@ya.ru</p>
+        </div>
+
+        <div class="email form__content">
+            <label for="email" class="email__label form__label">Email: </label>
+            <input id="email" type="email" name="email" class="email__input form__input" placeholder="Введите Email" required>
+        </div>
+
+        <div class="form__prompt prompt-password">
+            <p class="prompt__text">Символов меньше 8 или нет как минимум 1 заглавной, 1 строчной, 1 знака и 1 цифры</p>
+        </div>
+
+        <div class="password form__content">
+            <label for="password" class="password__label form__label">Пароль: </label>
+            <input id="password" type="password" name="password" class="password__input form__input" placeholder="Введите пароль" required>
+        </div>
+
+        <div class="form__prompt prompt-passwordconfirm">
+            <p class="prompt__text">Повторный пароль не совпадает с введеным ранее</p>
+        </div>
+
+        <div class="password-comfirm form__content">
+            <label for="password-confirm" class="password-confirm__label form__label">Повторный пароль: </label>
+            <input id="password-confirm" type="password" name="password-confirm" class="password-confirm__input form__input" placeholder="Введите повторно пароль" required>
+        </div>
+
+        <div class="form__prompt prompt-birthday">
+            <p class="prompt__text">Невалидная дата или вам меньше 18 лет</p>
+        </div>
+
+        <div class="birth-day form__content">
+            <label for="birth-day" class="birth-day__label form__label">Дата рождения: </label>
+            <input id="birth-day" type="date" name="birth-day" class="birth-day__input form__input" required>
+        </div>
+
+        <button id="form-button" class="form-button disabled" type="submit">Отправить</button>
+    </form>
+</body>
+</html>
